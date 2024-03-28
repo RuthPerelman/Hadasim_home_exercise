@@ -17,6 +17,7 @@ router.post('/read', async (req, res) => {
 })
 
 router.post('/update', async (req, res) => {
+    // console.log({body:req.body.value});
     req.body.tableName = "members"
     let result = await update(req.body)
     res.status(200).send(result)

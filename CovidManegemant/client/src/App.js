@@ -4,6 +4,7 @@ import Member from './components/member/Member';
 import { useEffect, useState } from 'react';
 import { client } from './services/axios';
 import Table from './components/table/Table';
+import { BrowserRouter, Routes,Route } from 'react-router-dom'
 
 function App() {
   const [members, setMembers] = useState([])
@@ -18,8 +19,13 @@ function App() {
   }, [])
 
   return <>
-    <Member></Member>
-    <Table data={members}></Table>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Table data={members}></Table>}/>
+        {/* <Route path='/member' element={<Member data={}></Member>}/> */}
+      </Routes>
+    </BrowserRouter>
+    {/* <Member></Member> */}
   </>
 }
 
