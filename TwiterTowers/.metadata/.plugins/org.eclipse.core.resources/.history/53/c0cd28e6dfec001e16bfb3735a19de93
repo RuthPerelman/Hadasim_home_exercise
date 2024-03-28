@@ -1,0 +1,25 @@
+package twiter_towers;
+
+public class Rectangle extends Shape{
+
+	public Rectangle(int height, int width) {
+		super(height,width);
+	}
+
+	public boolean TheDifferenceBetweenTheLengthsOfTheSides() {
+		int diff = this.height - this.width;
+		if (diff > 5 || diff < -5) {
+			return true;
+		}
+		return false;
+	}
+
+	public int perimeter() {
+		return this.height * 2 + this.width * 2;
+	}
+
+	public int area() {
+		return this.height * this.width;
+	}
+
+}

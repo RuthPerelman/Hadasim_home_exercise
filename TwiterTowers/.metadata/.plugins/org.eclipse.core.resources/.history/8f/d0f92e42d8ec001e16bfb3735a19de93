@@ -1,0 +1,31 @@
+package twiter_towers;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+
+		int option = in.nextInt();
+		System.out.println("choose:\n1.rectangle\n2.triangular");
+
+		while (option != 3) {
+			System.out.println("Enter height:");
+			int height = in.nextInt();
+			System.out.println("Insert width:");
+			int width = in.nextInt();
+			if (option==1) {
+				
+			}
+			else {
+				
+			}
+			
+			System.out.println("choose:\n1.rectangle\n2.triangular");
+			option = in.nextInt();
+		}
+		System.out.println("out");
+	}
+
+}

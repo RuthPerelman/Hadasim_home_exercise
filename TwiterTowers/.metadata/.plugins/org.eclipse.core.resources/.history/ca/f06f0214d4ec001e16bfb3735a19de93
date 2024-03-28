@@ -1,0 +1,19 @@
+package twiter_towers;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+
+		int option = in.nextInt();
+
+		while (option != 3) {
+			System.out.println("choose:/n 1.rectangle/n 2.triangular");
+			option = in.nextInt();
+		}
+		System.out.println("out");
+	}
+
+}
